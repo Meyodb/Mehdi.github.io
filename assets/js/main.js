@@ -259,4 +259,24 @@
    */
   new PureCounter();
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.projets-container');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    
+    prevButton.addEventListener('click', () => {
+      container.scrollBy({
+        top: -200,
+        behavior: 'smooth'
+      });
+    });
+    
+    nextButton.addEventListener('click', () => {
+      container.scrollBy({
+        top: 200,
+        behavior: 'smooth'
+      });
+    });
+  });
+
 })()
