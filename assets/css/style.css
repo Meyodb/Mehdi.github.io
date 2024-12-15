@@ -567,11 +567,13 @@ section {
 }
 
 .resume .resume-item ul {
-  padding-left: 20px;
+  padding-left: 0;
+  list-style: none;
 }
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  list-style-type: none;
 }
 
 .resume .resume-item:last-child {
